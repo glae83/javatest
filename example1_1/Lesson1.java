@@ -18,6 +18,8 @@ public class Lesson1 {
     System.out.println(minusOrPlus(aaa));
     String str = "Antony";
     namePrint(str);
+    int year = 2000;
+        visokosnyYear(year);
     }
     public static float sumM(float a, float b, float c, float d) {
         return a*(b+(c/d));
@@ -38,6 +40,15 @@ public class Lesson1 {
     }
     public static void namePrint(String str){
         System.out.println("Hi, "+str);
+    }
+    public static void visokosnyYear(int year){
+     if ((year%4==0&&year%400==0)||!(year%100==0)) {
+         System.out.println("true");
+         return;
+     }
+     else {}
+        System.out.println("false");
+
     }
     }
 
