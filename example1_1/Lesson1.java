@@ -18,7 +18,7 @@ public class Lesson1 {
     System.out.println(minusOrPlus(aaa));
     String str = "Antony";
     namePrint(str);
-    int year = 2000;
+    int year = 2004;
         visokosnyYear(year);
     }
     public static float sumM(float a, float b, float c, float d) {
@@ -39,15 +39,19 @@ public class Lesson1 {
         return aaa < 0 ;
     }
     public static void namePrint(String str){
-        System.out.println("Hi, "+str);
+        System.out.printf("Hi, %s", str);
+        System.out.println();
+    }
+    public static boolean testNumderOne(int year){
+        return (year%4 == 0 || year%100 == 0)&&(year % 400 != 0);
     }
     public static void visokosnyYear(int year){
-     if ((year%4==0&&year%400==0)||!(year%100==0)) {
+     if (testNumderOne(year)) {
          System.out.println("true");
-         return;
+         System.out.println("1");
      }
-     else {}
-        System.out.println("false");
+     else
+     {System.out.println("false");}
 
     }
     }
