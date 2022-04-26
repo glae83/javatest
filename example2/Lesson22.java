@@ -16,7 +16,8 @@ public class Lesson22 {
         int[] arr6 = {14, 8, 1, 0, 0, 22, 1};
         matrixMaxMin(arr4);
         matrixAverage(arr5);
-        matrixShift(arr6, 1);
+        System.out.println(Arrays.toString(arr6));
+        matrixShift(arr6, 2);
     }
 
     static void matrix(int[] arr) {
@@ -85,16 +86,14 @@ public class Lesson22 {
 
     static void matrixShift(int[] arr6, int n) {
         int a;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arr6.length-n; i++)
+        {
             for (int j = 0; j < arr6.length - 1; j++) {
                 a = arr6[j + 1];
                 arr6[j + 1] = arr6[j];
                 arr6[j] = a;
-
             }
         }
-
-
         System.out.println(Arrays.toString(arr6));
     }
 }
