@@ -2,7 +2,10 @@ package example1_1;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
+import java.util.Random;
+
 public class Lesson1 {
+    Random random;
 
     public static void main(String[] args) {
     float a = 80;
@@ -48,11 +51,24 @@ public class Lesson1 {
     public static void visokosnyYear(int year){
      if (testNumderOne(year)) {
          System.out.println("true");
-         System.out.println("1");
+         System.out.printf("%6d",year);
+         System.out.printf("%6d",year);
+         System.out.println();
      }
      else
      {System.out.println("false");}
-
+     int n = 100;
+//        for (int i = 1; i < 10; i++) {
+//            if (n % i == 0) {
+//                System.out.println(i);
+//            }
+//        }
+        for (int i = 0; i < 10; i++) {
+            if (i>=3&&i<=5){
+                break;
+            }
+            System.out.printf("%3d",i);
+        }
     }
     }
 
